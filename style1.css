@@ -1,0 +1,161 @@
+
+    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+   body{
+       background-image: url(viji.jpg);
+       background-size: cover;
+       background-position: center;
+       background-repeat: none;
+       
+   }
+   .manu-bar
+   {
+       background-color:rgb(28, 9, 136);
+       text-align: center;
+   }
+   .manu-bar ul{
+       display: inline-flex;
+       list-style: none;
+       color:white;
+   }
+   .manu-bar li{
+       width: 120px;
+       margin: 15px;
+       padding: 15px;
+   }
+   .active,.manu-bar ul li:hover
+   {
+       background-color: blue;
+       border-radius: 2px;
+   }
+   .manu-bar fa{
+       margin-right: 10px;
+   }
+   .sub-menu-1{
+       display: none;
+   }
+   .sub-menu-2{
+    display: none;
+}
+
+
+
+
+.sub-menu-3{
+    display: none;
+}
+.sub-menu-4{
+ display: none;
+}
+
+
+   .manu-bar ul li:hover .sub-menu-1{
+       display: block;
+       position: absolute;
+       background-color: rgb(12, 12, 124);
+       margin-top: 15px;
+       margin-left: -15px;
+   }
+   
+   .manu-bar ul li:hover .sub-menu-1 ul{
+       display: block;
+       margin: 5px;
+   }
+  
+   .manu-bar ul li:hover .sub-menu-1 ul li{
+       width: 150px;
+       padding: 10px;
+       border-bottom: 1px dotted white;
+       background: transparent;
+       border-radius: 0;
+       text-align: center;
+   }
+  
+   .manu-bar ul li:hover .sub-menu-1 a{
+       text-decoration: none;
+       color: white;
+   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+   .manu-bar ul li:hover .sub-menu-3{
+    display: block;
+    position: absolute;
+    background-color: rgb(12, 12, 124);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.manu-bar ul li:hover .sub-menu-3 ul{
+    display: block;
+    margin: 5px;
+}
+
+.manu-bar ul li:hover .sub-menu-3 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+}
+
+.manu-bar ul li:hover .sub-menu-3 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   .hover-me:hover.sub-menu-2
+
+   {
+       position: absolute;
+       display: block;
+       margin-top: -40px;
+       margin-left: 140px;
+       background: darkgrey;
+
+   }
+
+
+
+
+
+   .hover-me:hover.sub-menu-4
+
+   {
+       position: absolute;
+       display: block;
+       margin-top: -40px;
+       margin-left: 140px;
+       background: darkgrey;
+
+   }
+  
+  

@@ -1,0 +1,63 @@
+*{
+    padding : 0;
+    margin  : 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url('viji1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.main{
+    color: green;
+    margin-top: 0cm;
+    margin-right: 5cm;
+    
+}
+.main h1{
+    margin-left: 10cm;
+    margin-top: 3cm;
+   
+}
+.or{
+    border: green;
+    height: .3cm;
+    width: 4cm;
+    background-color: green;
+    margin-left: 10cm;
+    margin-top: 0cm;
+
+}
+.user{
+
+  
+    margin-left: 10cm;
+    font-size: 8mm;
+    margin-top: 1cm;
+    
+}
+.user1{
+    border: green;
+    height: .2cm;
+    width: 4cm;
+    background-color: green;
+
+}
+
+.pass{
+
+  
+    margin-left: 10cm;
+    font-size: 4mm;
+    margin-top: 2cm;
+}
+.button{
+    border: green;
+   
+    background-color: green;
+    margin-top: 8cm;
+    margin-right: 5cm;
+
+}
+

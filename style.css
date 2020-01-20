@@ -1,0 +1,35 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+.body{
+    background-image: url('C:\Users\FACE-94\Downloads/bbb.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.menu-bar{
+    margin-top: 1cm;
+    background-color: blueviolet;
+    text-align: center;
+    width: 37cm;
+    height: 2cm;
+}
+.menu-bar ul{
+    display: inline-flex;
+    color: black;
+    list-style: none;
+}
+.active,.menu-bar ul li:hover
+
+{
+background: chocolate;
+border-radius: 10mm;
+}
+.submenu-1{
+    color: black;
+    margin-top: 3cm;
+    background-color: cornsilk;
+}
