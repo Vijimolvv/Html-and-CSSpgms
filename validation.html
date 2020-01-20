@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Validation</title>
+    </head>
+    <form action="https://facetech.freshgrad.co/" onsubmit="return myfunction()">
+    NAme(max 10 char):<input type="text" id="fname" size="20" name="fname">
+Age(from 1 yo 100):<input type="text" id="age" size="20" name="age"><br>
+Email:<input type="text" id="email" size="20" name="email"><br><br>
+<input type="submit" value="submit">
+</form>
+<script>
+    function myfunction()
+    {
+        var at=document.getElementById("email").value.indexof("@");
+        var age=document.getElementById("age").value;
+        var name=document.getElementById("fname").value;
+        submitok=true;
+    }
+    if(fname.length>10)
+    {
+        alert("the name may have no more than 10 characters");
+        submitok=false;
+    }
+    if(isNaN(age)||age<1||age>100)
+    {
+        alert("The age must be a number ");
+        submitok="false";
+    }
+    if(at==-1)
+    {
+        alert("invalid email");
+        submitok="false";
+    }
+    if(submitok=="false")
+    {
+        return false;
+    }
+</script>
+</html>
