@@ -1,0 +1,73 @@
+#hea
+{
+    border: 2cm;
+    background-color: blue;
+    height: 2cm;
+    width: 29.1cm;
+   
+}
+.sign{
+
+   margin-left: 17cm;
+    font-size: small;
+    display: inline;
+}
+#rr{
+    margin-top: .3cm;
+}
+.img{
+    height: 10cm;
+    width: 50cm;
+    align-content: center;
+    margin-left: 2.9cm;
+}
+.blue{
+    background-color: blueviolet;
+    height: 20cm;
+    width: 30cm;
+}
+#detail{
+    margin-left: 5cm;
+    margin-top: 3cm;
+    color: crimson;
+    font-family: cursive;
+    
+}
+
+
+#form{
+    margin-left: 5cm;
+    margin-top: 1cm;
+}
+#bod{
+    background-color: rgb(131, 160, 81);
+    margin-left: 7cm;
+    height: 20cm;
+    width: 40cm;
+    align-items: center;
+
+}
+#butt{
+    margin-left: 13cm;
+    margin-top: -4cm;
+}
+#but{
+    margin-top: -6cm;
+    margin-left: 17cm;
+}.butt{
+    margin-top: -1cm;
+    margin-left: 8cm;
+}
+.but{
+    margin-top: -2.7cm;
+    margin-left: 15cm;
+}
+#back{
+     border: radius 1px; ;
+     color: darkorange;
+     background-color: darkviolet;
+}
+.reg
+{
+   display: inline;
+}

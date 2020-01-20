@@ -1,0 +1,136 @@
+<head>
+    <title>register</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="blue">
+        <h2>       <p style="text-align: center;">Registration Details </p>  </h2>
+   
+       
+            <div class="row" style="text-align: center;" id="detail">
+                <div class="col-md-12">
+                    <div class="col-md-8">
+                        <input type="text" name="" id="fname" placeholder="FirstName" required="required"><br>
+                        <input type="text" name="" id="lname" placeholder="LastName" required="required"><br>
+                        <input type="text" name="" id="age" placeholder="Age" required="required"><br>
+                        <input type="text" name="" id="gendor" placeholder="Gender" required="required"><br>
+                        
+                        <input type="text" name="" id="username" placeholder="UserName" required="required"><br>
+                        <input type="email" name="" id="email" placeholder="E-mail" required="required"><br>
+                  
+                  <div class="reg">
+                        <button type="submit" class="btn btn-primary" id="adduser" onclick="add()">Submit</button>
+
+                  <form action="index.html">    <button type="submit" class="btn btn-primary" id="adduser" onclick="adduser()" id="bac">Back</button>
+                  </form>  
+                </div>
+                <div  class="col-md-8">
+                    <table id="table">
+                        <tr>
+                            <th>Registration Details</th>
+                            <th></th>
+                        </tr>
+
+
+                    </table>
+                </div>
+                </div>
+               
+            </div>
+            
+        </div>
+
+    </div>
+    <script>
+    var rIndex,
+                table = document.getElementById("table");
+            
+            function checkEmptyInput() {
+                var isEmpty = false,
+                    fname = document.getElementById("fname").value,
+                    lname = document.getElementById("lname").value;
+                   
+                if (fname==="")
+                 {
+                    alert("First Name Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if (lname==="")
+                {
+                   alert("Last Name Connot Be Empty");
+                   isEmpty = true;
+               }
+               else if (age==="")
+                {
+                   alert("date of birth Connot Be Empty");
+                   isEmpty = true;
+               }
+               else if (gendor==="")
+               {
+                  alert("Email Connot Be Empty");
+                  isEmpty = true;
+              }
+              else if (username==="")
+              {
+                 alert("user name Connot Be Empty");
+                 isEmpty = true;
+             }
+              else if (email==="")
+              {
+                 alert("email Connot Be Empty");
+                 isEmpty = true;
+             }
+
+
+                return isEmpty;
+                        }
+                        function add() {
+                          
+                            if (!checkEmptyInput()) {
+                                var newRow = table.insertRow(table.length),
+                                    cell1 = newRow.insertCell(0),
+                                    fname = document.getElementById("fname").value;
+                                    cell1.innerHTML = fname;
+                                    var newRow = table.insertRow(table.length),
+                                    cell1 = newRow.insertCell(0),
+                                    lname = document.getElementById("lname").value;
+                                    cell1.innerHTML = lname;
+                                    var newRow = table.insertRow(table.length),
+                                    cell1 = newRow.insertCell(0),
+                                   age = document.getElementById("age").value;
+                                    cell1.innerHTML = age;
+                                    var newRow = table.insertRow(table.length),
+                                    cell1 = newRow.insertCell(0),
+                                    gendor = document.getElementById("gendor").value;
+                                    cell1.innerHTML = gendor;
+                                    var newRow = table.insertRow(table.length),
+                                    cell1 = newRow.insertCell(0),
+                                   username = document.getElementById("username").value;
+                                    cell1.innerHTML = username;
+                                    var newRow = table.insertRow(table.length),
+                                    cell1 = newRow.insertCell(0),
+                                    email = document.getElementById("email").value;
+                                    cell1.innerHTML = email;
+                                    var newRow = table.insertRow(table.length),
+                                    cell1 = newRow.insertCell(0);
+                                 cell1= <button> Register</button> 
+                             
+
+                                   
+                             
+                                
+                                   
+                            }
+                        }
+</script>
+
+<div class="bbbbb">
+ 
+    <form action="login.html">   <button> Register</button> </div></form>
+</body>
+</html>
