@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>function</title>
+        <script type="text/javascript">
+        function add(a,b)
+        {
+            var c=a+b;
+            document.write(c);
+        }
+
+
+        function sub(a,b)
+        {
+            var c=a-b;
+            document.write(c);
+        }
+
+
+
+        function mul(a,b)
+        {
+            var c=a*b;
+            document.write(c);
+        }
+
+
+        function div(a,b)
+        {
+            var c=a/b;
+            document.write(c);
+        }
+
+
+    </script>
+    </head>
+    <body>
+        <script>
+            
+            var n1=prompt("enter the num1");
+            n1=parseInt(n1);
+        
+            var n2=prompt("enter the num2");
+            n2=parseInt(n2);
+            </script>
+
+            <form >
+        <input type="button" onclick="add(n1,n2)" value="Add">
+        <input type="button" onclick="sub(n1,n2)" value="Sub">
+        <input type="button" onclick="mul(n1,n2)" value="mul">
+        <input type="button" onclick="div(n1,n2)" value="div">
+    </body>
+</html>
