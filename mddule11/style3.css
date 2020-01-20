@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+   body{
+       background-image: url(viji.jpg);
+       background-size: cover;
+       background-position: center;
+       background-repeat: none;
+       
+   }
+   .menu
+   {
+       background-color:rgb(28, 9, 136);
+       text-align: center;
+   }
+   .menu{
+       display: inline-flex;
+       list-style: none;
+       color:white;
+   }
+   .menu{
+       width:38cm;
+       margin: 15px;
+       padding: 15px;
+   }
+   .active,.menu ul li:hover
+   {
+       background-color: blue;
+       border-radius: 2px;
+   }
+   .menu fa{
+       margin-right: 10px;
+   }
+   .row{
+       display: inline;
+   }
