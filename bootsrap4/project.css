@@ -1,0 +1,42 @@
+*{
+    padding : 0;
+    margin  : 0;
+    box-sizing: border-box;
+}
+body
+{
+   background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    border: rgb(250, 181, 135);
+    width: 36cm;
+    height: 2cm;
+    background-color: whitesmoke;
+}
+.header h2{
+    margin-top: 0cm;
+}
+#hh{
+    margin-left: 3cm;
+   
+    color: teal;
+    margin-bottom: 10cm;
+}
+.header ul{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 4cm;
+    
+}
+.log ul{
+   float: right;
+}
+.header1{
+    border: rgb(250, 181, 135);
+    width: 36cm;
+    height: 2cm;
+    background-color: lightskyblue;
+
+}
