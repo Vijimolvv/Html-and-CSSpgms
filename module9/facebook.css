@@ -1,0 +1,179 @@
+.psc{
+    background-color: royalblue;
+    height: 28cm;
+    width: 25cm;
+    margin-left: 70mm;
+margin-bottom: 20mm;
+    border-radius: 50px;
+    
+align-items: center;
+font-size: 6mm;
+
+
+
+}
+.psc h2
+{
+    float: left;
+    margin-left: 80mm;
+    padding: 80mm  80mm 80mm 80mm;
+}
+.img
+{
+    width: 10px;
+    height: 10px;
+    margin-left: 140mm;
+    margin-top: 0mm;
+}
+ /* .ps{
+      margin-left: 20mm;
+      padding: 50px 60px;
+      font-size: 7mm;*/
+   
+  .hom a{
+      text-decoration: none;
+      margin-right: 200mm;
+     color: aliceblue;  
+     margin-left: 200mm;   
+     padding: 10mm 100px 200px 100px; 
+     
+     }
+     .tulsi{
+
+       margin-right: 120mm;
+    margin-top:9mm;
+  
+
+     }
+     .bullet{
+
+margin-right: 100mm;
+margin-top: 0mm;
+
+}
+.sms{
+
+margin-right: 100mm;
+margin-top: 0mm;
+
+
+
+    height: 28cm;
+    width: 25cm;
+  
+
+    border-radius: 50px;
+    
+align-items:left;
+font-size: 6mm;
+
+
+
+
+
+}
+      
+.home{
+margin-left:170mm ;
+
+
+margin-top:-20mm;
+
+}
+
+.contact{
+margin-left:190mm ;
+
+
+margin-top:-13mm;
+
+}
+
+
+
+
+.sitemap{
+margin-left:215mm ;
+
+
+margin-top:-13mm;
+
+}
+
+
+
+
+.login{
+   padding: 30px 30px 30px 30px;
+   background:rgb(143, 155, 188);
+   border-radius: 10px;
+   margin-top: -355mm;
+   width: 50mm;
+   height: 80mm;
+   float :right;
+  
+}
+         
+#sign{
+ margin-left: 90px;
+ border-radius: 10px;
+ background-color: blue;
+ font-size: 5mm;
+}       
+
+#log{
+ margin-left: 30px;
+ border-radius: 10px;
+ background-color: blue;
+ font-size: 5mm;
+}    
+#ff{
+ font-size:5mm ;
+ color: crimson;
+
+}
+#fff{
+ font-size:5mm ;
+ color:darkblue;
+
+}
+.general{
+ float:right;
+margin-top:-250mm;
+font-size:5mm ;
+ 
+
+
+}
+.help{
+
+float:right;
+margin-top:-200mm;
+font-size:5mm ;
+margin-right: 15mm;
+color: darkgreen;
+
+}
+.note{
+ margin-top:-220mm;
+ font-size: 4mm;
+ color: floralwhite;
+ margin-right: 50mm;
+
+}
+.bor{
+ border: 1px solid rgb(238, 191, 104);
+ height: 50mm;
+ width: 135mm;
+ background: #718ff1;
+}
+.browse{
+border: royalblue;
+ height: 25mm;
+ width: 90mm;
+ background: royalblue;
+ margin-left:100mm ;
+
+}
+
+     
