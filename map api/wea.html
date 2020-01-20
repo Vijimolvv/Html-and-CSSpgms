@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Weather</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+        <script src="weather.js"></script>
+
+    </head>
+    <style>
+        .main{
+            border: 2cm;
+            height: 10cm;
+            width: 20cm;
+            background-color: cornsilk;
+            margin-left: 5cm;
+        }
+        .sub{
+            border: 2cm;
+            height: 10cm;
+            width: 10cm;
+            background-color:blue;
+            margin-left: 0cm;
+        }
+        #vv{
+            margin-top: 3cm;
+            margin: 2cm;
+            color: white;
+        }
+        .vvv{
+            margin-left: 12cm;
+            margin-top: -5cm;
+        }
+        span{
+            color: black;
+        }
+        #ok{
+            margin-right: 5cm;
+        }
+
+    </style>
+    <body>
+        <div class="main">
+           
+<div class="sub">
+    <h1 id="vv">
+Weather <span >App</span> </h1>
+<p style="color: white;">
+
+Weather channel - Update local <br> weather accurate for daily, weekly, free
+</p>
+</div>
+<div class="show"></div>
+<div class="vvv">
+Enter city name
+    <input type="text" placeholder="city" id="txt1" >
+    <br>
+    <input type="submit" value="submit" id="ok">
+
+    
