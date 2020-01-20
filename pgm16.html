@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script src="jsfw/js/jquery-1.11.0.js"></script>
+        <title>ddugky</title>
+    </head>
+    <body>
+     A value   <input type="text" id="a">
+     B value   <input type="text" id="b">
+     <button type="button" id="btn">Add</button>
+<p id="out"></p>
+
+
+
+     <script>
+        $(document).ready(function(){
+            $("#btn").bind('click',add);
+
+            $("#a").bind("keyup",ch)
+            .bind("blur",blur);
+            $("#a").bind("focus",focus);
+            $("#b").bind("keyup",ch1).bind("blur",blur1);
+        });
+
+        function focus(){
+            $("#out").html("you are selected in A text box");   
+        }
+
+        function ch(){
+            $("#out").html("A typing");   
+        }
+        function blur(){
+            $("#out").html("A outside typing");   
+        }
+
+
+        function ch1(){
+            $("#out").html("B typing");   
+        }
+        function blur1(){
+            $("#out").html("b outside typing");   
+        }
+
+           function add(){
+               var c=Number($("#a").val())+Number($("#b").val())
+               $("#out").html("Total---->"+c);
+           }
+   
+
+
+  
+    
+       
+    </script>
+
+
+
+
+    </body>
+</html>

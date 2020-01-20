@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <script src="jsfw/js/jquery-1.11.0.js"></script>
+        <title>
+            login
+        </title>
+        <style>
+.main{
+    border: 5px;
+    height: 2cm;
+    width: 20cm;
+    background-color: blueviolet;
+    color: crimson;
+}
+        </style>
+        <body>
+            <div class=" main">
+            <button id="but1">Login</button>
+
+            <button id="but2">
+                sign up
+            </button>
+        
+<div id="login">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" placeholder="password">
+    <button>Submit</button>
+</div>
+
+
+
+<div id="signup">
+    <input type="text" name="firstname" placeholder="name">
+    <input type="text" placeholder="email">
+    <input type="text" placeholder="age">
+    <input type="text" placeholder="address">
+    <button>submit</button>
+
+</div>
+
+
+</div> 
+
+
+
+
+
+<script>
+    $(document).ready(function(){
+        $("#login").hide();
+        $("#but1").click(function()
+
+        {
+            if($("#login").is(':visible'))
+            {
+
+            
+          $("#login").fadeOut(2000);
+    }
+    else{
+        
+        $("#login").fadeIn(2000);
+    }
+
+
+
+
+
+
+});
+
+
+
+$("#signup").hide();
+        $("#but2").click(function()
+
+        {
+            if($("#signup").is(':visible'))
+            {
+
+            
+          $("#signup").fadeOut(2000);
+    }
+    else{
+        
+        $("#signup").fadeIn(2000);
+    }
+
+
+
+
+
+
+});
+
+
+
+
+});
+   
+</script>
+
+
+
+        </body>
+    </head>
+</html>

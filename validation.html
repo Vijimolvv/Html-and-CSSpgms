@@ -1,39 +1,199 @@
 <html>
     <head>
-        <title>Validation</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+        <script src="js/jquery-1.11.0.js"></script>
+       
+        <style type="text/css">
+            body
+            
+            {
+                margin:0;
+                padding:0;
+               
+                background-repeat:no-repeat;
+                background-size: cover;
+
+            }
+            #main{
+                width: 480;
+                height: 620px;
+                background-color:indigo;
+                border-radius: 10px;
+                color:#fff;
+                top:50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                box-sizing: border-box;
+                padding:70px 40px 50px 60px;
+
+            }
+
+             .img{
+
+                border-radius: 50%;
+                position: absolute;
+               margin-left:40px;
+               margin-top:-120px;
+                
+             }
+              h1{
+                  margin: 0;
+                  
+                  text-align: center;
+                  font-size: 22px;
+              }
+
+             .main p{
+                 margin: 0;
+                 padding: 0;
+                 font-weight: bold;
+             }
+             .main input{
+                 width: 80%;
+                 margin-bottom: 20px;
+                
+
+             }
+             .in{
+                 border: none;
+                 border-bottom:1px solid #fff;
+                 background: transparent;
+                 outline: none;
+                 height: 40px;
+                 color:#fff;
+                font-size: 16px;
+             }
+             .submit{
+                 border: none;
+                 outline: none;
+                 height: 40px;
+                 background: #fb2525;
+                 color:#fff;
+                 font-size: 18px;
+                 border-radius:20px;
+             }
+             .sub{
+                 text-decoration: none;
+                 font-size: 16px;
+                 line-height: 20px;
+                 color: dimgray;
+             }
+
+            
+            </style>
+        
     </head>
-    <form action="https://facetech.freshgrad.co/" onsubmit="return myfunction()">
-    NAme(max 10 char):<input type="text" id="fname" size="20" name="fname">
-Age(from 1 yo 100):<input type="text" id="age" size="20" name="age"><br>
-Email:<input type="text" id="email" size="20" name="email"><br><br>
-<input type="submit" value="submit">
-</form>
-<script>
-    function myfunction()
-    {
-        var at=document.getElementById("email").value.indexof("@");
-        var age=document.getElementById("age").value;
-        var name=document.getElementById("fname").value;
-        submitok=true;
-    }
-    if(fname.length>10)
-    {
-        alert("the name may have no more than 10 characters");
-        submitok=false;
-    }
-    if(isNaN(age)||age<1||age>100)
-    {
-        alert("The age must be a number ");
-        submitok="false";
-    }
-    if(at==-1)
-    {
-        alert("invalid email");
-        submitok="false";
-    }
-    if(submitok=="false")
-    {
-        return false;
-    }
-</script>
-</html>
+    <body>
+       
+        <div id="main">
+          
+                  
+           
+             <h1>Login Form</h1><br>
+            <form>
+                <p>UserName</p>
+             <input type="text" name="" required="required" placeholder="username" class="in" align="middle" class="form_text" id="form_username"/><span class="error_form" id="username_error_message"></span>
+
+             <p>Email</p>
+             <input type="email" name="" required="required" placeholder="Email" class="in" align="middle" class="form_text" id="form_email"/><span class="error_form" id="email_error_message"></span>
+
+             <p>password</p>
+               <input type="password" name="password" required="required" placeholder="password" class="in" class="form_text" id="form_password" /><span class="error_form" id="password_error_message"></span>
+
+             <p>ReType Password</p>  
+             <input type="password" name="password" required="required" placeholder="password" class="in"  class="form_text" id="form_password1" /><span class="error_form" id="password1_error_message"></span> <br><br>
+           <a href="#"> <input type="submit" value="Login" class="submit" formaction="CSS.html" /></a><br><br>
+           
+           
+           <a href="#" class="sub">forgot password</a>
+           </form>  
+           
+         </div>
+         <script>
+           
+                   $(function() {
+                    $("#username_error_message").hide();
+                    $("#password_error_message").hide();
+                    $("#email_error_message").hide();
+                    $("#retype_password_error_message").hide();
+                    var error_username = false;
+                    var error_password = false;
+                    var error_email = false;
+                    var error_retype_password = false;
+                    $("#form_username").focusout(function() {
+                        check_username();
+                        
+                    });
+                    $("#form_password").focusout(function() {
+                        check_password();
+                        
+                    });
+                    $("#form_email").focusout(function() {
+                        check_email();
+                        
+                    });
+                    $("#form_password1").focusout(function() {
+                        check_password1();
+                        
+                    });
+
+                });
+                function check_username() {
+                    
+                        var username_length = $("#form_username").val().length;
+                        
+                        if(username_length < 5 || username_length > 20) {
+                            $("#username_error_message").html("Should be between 5-20 characters");
+                            $("#username_error_message").show();
+                            error_username = true;
+                        } 
+                        else {
+                            $("#username_error_message").hide();
+                        }
+                    
+                    }  
+                    function check_password() {
+                    
+                        var password_length = $("#form_password").val().length;
+                        
+                        if(password_length < 8 || password_length > 20) {
+                            $("#password_error_message").html("Should be 8 characters");
+                            $("#password_error_message").show();
+                            error_username = true;
+                        } 
+                        else {
+                            $("#password_error_message").hide();
+                        }
+                    
+                    }  
+                    function check_password1() {
+                    
+                        var password1_length = $("#form_password1").val().length;
+                        var password_length = $("#form_password").val().length;
+                        
+                        if(password1_length!=password_length) {
+                            $("#password1_error_message").html("Not Match");
+                            $("#password1_error_message").show();
+                            error_password1 = true;
+                        } 
+                        else {
+                            $("#password1_error_message").hide();
+                        }
+                    
+                    }  
+                    function check_email(){
+                        var regax= new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/);
+                        if(regax.test($("#form_email").val())){
+                            $("#email_error_message").hide();  
+                        }
+                        else{
+                            $("#email_error_message").html("Invalid Email");
+                            $("#email_error_message").show(); 
+                            error_email = true;
+                        }
+
+
+
+
+                    }

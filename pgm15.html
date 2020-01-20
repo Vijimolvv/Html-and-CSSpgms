@@ -1,0 +1,120 @@
+<html>
+    <head>
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-3.3.7/docs/dist/js/bootstrap.min.js">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            <h2>
+                Login
+            </h2>
+
+        </title>
+        <style type="text/css">
+        body
+        {
+            margin:0;
+            padding: 0;
+            background-image: url(C:/Users/FACE-94/Downloads/vdvdc.jpg);
+            background-repeat: no-repeat;
+           background-size: cover;
+        }
+        
+        
+        .main
+        {
+            height: 500px;
+       
+            width: 700px;
+            top:70%;
+            left: 70%;
+            position: absolute;
+            transform: translate(-60%,-60%);
+        
+            padding: 90px 50px 50px 50px;
+            background: brown ;
+        }
+        .de{
+            padding: 50px 40px 50px 40px;
+            background:rgb(188, 143, 147);
+            border-radius: 10px;
+        }
+        .submit
+        {
+            border-radius: 10px;
+            padding: 10px 10px;
+            background: darkgreen;
+            color: darkorange;
+            margin-top: 19px;
+            border: none;
+            outline: none;
+            margin-left: 20px;
+        }
+            </style>
+    </head>
+    <script src="jsfw/js/jquery-1.11.0.js"></script>
+    <body>
+        
+            <div class="main">  
+
+        <form>
+               
+           
+              
+             <img src="C:\Users\FACE-94\Downloads/vv.jpg " height="100" width="100" align="center">
+               
+               <div calss="de">
+                 <input type="text" name ="username" required="required" placeholder="Username" align="center">
+                 
+<br>
+<br>
+                 
+                 <input type="text" name ="Email" required="required" placeholder="Email">
+                
+<br>
+<br>                  
+                  <input type="password"  id="name" name ="password" minlength="8" maxlength="12" required="required"placeholder="password" >
+             <br>
+              <br>
+               </div>
+             
+     <input type="checkbox" id="ch" >Show password <br>
+    
+
+       <button class="submit" value= "sign in" formaction="login.html"> sign up</button>
+                 
+
+                 
+                       
+      <button class="submit" value=" sign up"  formaction="reg.html"> sign in </button> 
+     
+                     
+                 
+                </div>
+              
+      
+      
+            
+            
+              </form>
+             
+           
+              <script>
+$("#ch").click (function()
+{
+    if($(this).prop('checked'))
+    {
+        $("#name").attr("type","text");
+    }
+    else{
+        $("#name").attr("type","password"); 
+    }
+})
+
+
+              </script>
+    </body>
+</html>

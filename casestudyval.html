@@ -1,0 +1,363 @@
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-3.3.7/docs/dist/js/bootstrap.min.js">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Casestudy</title>
+        <style type="text/css">
+            .background{
+               
+                height: 2cm;
+                width: 5cm;
+            }
+            .reg{
+               
+                height: 10cm;
+                width: 10cm;
+                background-color: thistle;
+                color: darkblue;
+                margin-left: 8cm;
+                margin-top: 2cm;
+                
+              
+            }
+            .text1{
+                font-size:.5cm;
+                color: black;
+               
+            }
+            #field1
+            {
+                margin-top: -.8cm;
+                margin-left: 1cm;
+            }
+
+
+            .text2{
+                font-size:.5cm;
+                 color: black;
+            }
+            #field2
+            {
+                margin-top: -.8cm;
+                margin-left: 1cm;
+            }
+
+
+            .text3{
+                font-size:.5cm;
+                color: black;
+               
+            }
+            #field3
+            {
+                margin-top: -.8cm;
+                margin-left: 1cm;
+            }
+
+            .text4{
+                font-size:.5cm;
+                color: black;
+                
+            }
+            #field4
+            {
+                margin-top: -.8cm;
+                margin-left: 1cm;
+            }
+            .text5{
+                font-size:.5cm;
+                color: black;
+                
+            }
+            #field5
+            {
+                margin-top: -.8cm;
+                margin-left: 1cm;
+            }
+            #btn{
+                border-radius: 1cm;
+                color: white;
+                background-color: blue;
+            }
+            #btn1{
+                border-radius: 1cm;
+                color: white;
+                background-color: blue;
+            }
+            #head{
+                color: white;
+                text-align: center;
+            }
+
+        </style>
+
+<script src="jsfw/js/jquery-1.11.0.js"></script>
+</head>
+        <body>
+            <form action="#d" id="vvv"> 
+            
+               <div class="reg">
+                <h2 id="head">Register</h2>
+                    <div class="text1">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        &nbsp;&nbsp;<input type="text" id="form_fname" name="Firstname" required="" ><u style="color: red;"></u>
+                         <label id="field1">firstname</label>
+                        <span class="error_form" id="fname_error_message">   </span>
+                       
+                    </div>
+                   
+
+                    <div class="text2">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        &nbsp;&nbsp; <input type="text" id="form_lname" name="Lastname" required="" placeholder="last name" > 
+                        <span class="error_form" id="lname_error_message"></span>
+                        <label id="field2"></label>
+                    </div>
+
+                    <div class="text3">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        &nbsp;&nbsp;  <input type="email" id="form_email" name="email" required="" placeholder="email" > 
+                        <span class="error_form" id="email_error_message"></span>
+                        <label id="field3"></label>
+                    </div>
+                    <div class="text4">
+                        
+                        &nbsp;&nbsp;   <input type="password" id="form_password" name="password" required="" placeholder="password" > 
+                        <span class="error_form" id="password_error_message"></span><i class="fa fa-unlock-alt" aria-hidden="true" ></i>
+                        <label id="field4"></label>
+                    </div>
+                    <div class="text5">
+                        
+                        &nbsp;&nbsp;  <input type="password" id="form_retype" name="Lasttname" required="" placeholder="re enter password" > 
+                        <span class="error_form" id="retype_error_message"></span><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <label id="field5"></label>
+                    </div>
+                </form>
+
+<button type="submit" id="btn">Register</button>
+<button id="btn1">Reset</button>
+                </div>
+          
+      
+                
+
+
+
+
+
+
+
+
+
+
+                <script>
+                    $(function() {
+                      $("#fname_error_message").hide();
+                      $("#lname_error_message").hide();
+                      $("#password_error_message").hide();
+                      $("#retype_error_message").hide();
+                      $("#email_error_message").hide();
+                      var error_firstname = false;
+                      var error_lasttname = false;
+                      var error_password = false;
+                      var error_retype_password = false;
+                      var error_email = false;
+                      $("#form_fname").focusout(function() {
+                          check_firstname();
+                          
+                      });
+      
+                      $("#form_lname").focusout(function() {
+                          check_lastname();
+                          
+                      });
+      
+      
+      
+                      $("#form_password").focusout(function() {
+                          check_password();
+                          
+                      });
+
+
+
+
+                      
+                      $("#form_retype").focusout(function() {
+                          check_password();
+                          
+                      });
+      
+      
+                      $("#form_email").focusout(function() {
+                          check_email();
+                          
+                      });
+                  
+      
+                    
+
+
+
+
+
+
+                    $("vvv").submit(function(){
+    error_firstname=false;
+    error_lastname=false;
+    error_email=false;
+    error_password=false;
+    error_retype_password=false;
+    check_firstname();
+    check_lastname();
+    check_email();
+    check_password();
+    check_retype_password();
+if(error_firstname===false && error_lastname===false && error_email===false && error_password===false && error_retype_password===false)
+{    alert("Registration Successfully");
+    return true;
+}
+else
+{
+    alert("Please fill the form correctly");
+    return false;   
+}
+});
+
+                    });
+
+
+
+
+
+                    $(document).ready(function() { 
+            $("btn1").click(function() { 
+                //$("#d").trigger("reset"); 
+                //$("#d").get(0).reset(); 
+                $("#d")[0].reset() 
+            }); 
+        }); 
+
+
+                   
+
+                 
+              
+                   
+                    function check_firstname() {
+          
+                      var firstname_length = $("#form_fname").val().length;
+                      
+                      if(firstname_length < 5 || firstname_length > 20) {
+                          $("#fname_error_message").html("Should be between 5-20 characters");
+                          $("#fname_error_message").show();
+                          error_firstrname = true;
+                      } else {
+                          $("#fname_error_message").hide();
+                      }
+                  
+                  }
+
+
+                  
+                  function check_lastname() {
+          
+          var firstname_length = $("#form_lname").val().length;
+          
+          if(firstname_length < 5 || firstname_length > 20) {
+              $("#lname_error_message").html("Should be between 5-20 characters");
+              $("#lname_error_message").show();
+              error_lastname = true;
+          } else {
+              $("#lname_error_message").hide();
+          }
+      
+      }
+      
+      
+      
+      
+                  function check_password() {
+          
+          var password_length = $("#form_password").val().length;
+          
+          if(password_length < 8 || password_length > 15) {
+              $("#password_error_message").html("Should be between 8-15 characters");
+              $("#password_error_message").show();
+              error_password = true;
+          } else {
+              $("#password_error_message").hide();
+          }
+      
+      }
+
+
+
+
+
+
+
+      function check_retype_password() {
+          
+          var password_length = $("#form_retype").val().length;
+          
+          if(password_length < 8 || password_length > 15) {
+              $("#retype_error_message").html("Should be between 8-15 characters");
+              $("#retype_error_message").show();
+              error_password = true;
+          } else {
+              $("#retype_error_message").hide();
+          }
+      
+      }
+      
+      
+      
+      
+      
+      
+      
+      function check_email(){
+                              var regax= new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/);
+                              if(regax.test($("#form_email").val())){
+                                  $("#email_error_message").hide();  
+                              }
+                              else{
+                                  $("#email_error_message").html("Invalid Email");
+                                  $("#email_error_message").show(); 
+                                  error_email = true;
+                              }
+      
+      
+      
+      
+                          }
+
+
+
+
+
+
+
+      
+              </script>
+                  
+            
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+      
+</html>
